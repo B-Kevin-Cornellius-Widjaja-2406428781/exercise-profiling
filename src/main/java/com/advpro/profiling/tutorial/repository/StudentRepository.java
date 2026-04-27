@@ -1,6 +1,7 @@
 package com.advpro.profiling.tutorial.repository;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -16,4 +17,6 @@ public interface StudentRepository extends JpaRepository<Student, Long> {
 
     @Query("SELECT s.name FROM Student s")
     List<String> findAllNames();
+
+    Optional<Student> findFirstByOrderByGpaDesc();
 }
