@@ -22,16 +22,31 @@ Screenshot of the performance testings:
 Comparison before and after optimization:
 ![all-student-optimized](./assets/images/get_all_student_comparison_optimization.png)
 
-2. **/highest-gpa (optimizing findStudentWithHighestGpa)**
+JMeter performance for /all-student endpoint after optimization:
+![all-student-optimized-jmeter](./assets/images/test_plan_all_student_optimized.png)
+
+Dapat dilihat pada kode sebelumnya, `getAllStudentWithCourse` memakan waktu 5,3 detik, dan setelah dioptimisasi, waktu respon berhasil dikurangi menjadi 1,8 detik. Hal ini menunjukkan peningkatan performa yang signifikan setelah melakukan optimasi pada endpoint tersebut.
+
+
+1. **/highest-gpa (optimizing findStudentWithHighestGpa)**
 
 Comparison before and after optimization:
 ![highest-gpa-optimized](./assets/images/get_highest_gpa_comparison_optimization.png)
+
+JMeter performance for /highest-gpa endpoint after optimization:
+![highest-gpa-optimized-jmeter](./assets/images/test_plan_highest_gpa_optimized.png)
+
+Dapat dilihat pada kode sebelumnya, `findStudentWithHighestGpa` memakan waktu 132ms, dan setelah dioptimisasi, waktu respon berhasil dikurangi menjadi 52ms. Hal ini menunjukkan peningkatan performa yang signifikan setelah melakukan optimasi pada endpoint tersebut.
 
 3. **/all-student-name (optimizing joinStudentNames)**
 
 Comparison before and after optimization:
 ![all-student-name-optimized](./assets/images/get_all_student_name_comparison_optimization.png)
 
+JMeter performance for /all-student-name endpoint after optimization:
+![all-student-name-optimized-jmeter](./assets/images/test_plan_all_student_name_optimized.png)
+
+Dapat dilihat pada kode sebelumnya, `joinStudentNames` memakan waktu 489ms, dan setelah dioptimisasi, waktu respon berhasil dikurangi menjadi 52ms. Hal ini menunjukkan peningkatan performa yang signifikan setelah melakukan optimasi pada endpoint tersebut. 
 
 ## Is there an improvement from JMeter measurements?
 
